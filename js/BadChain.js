@@ -4,10 +4,10 @@ var BadChain = function(id) {
 	var _sel = $(id);
 		_sel.each(function() {//执行遍历
 			if ($(this).attr('src') == '') {//判断src属性是否为空
-				$(this).attr("src", "nopic.jpg");//设置src属性
+				$(this).attr("src", "images/nopic.jpg");//设置src属性
 			}
 			$(this).error(function() {//加载错误执行
-				$(this).attr("src", "nopic.jpg");
+				$(this).attr("src", "images/nopic.jpg");
 			});
 		});
 }
